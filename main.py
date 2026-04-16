@@ -8,7 +8,7 @@ shooping = {
 
 for shop, items in shooping.items():
     print(
-        f"I'm going to the {shop.capitalize()} and buy there {', '.join(item.capitalize() for item in items).split()}."
+        f"I'm going to the {shop.capitalize()} and buy there: {shooping[shop]}."
     )
 print(f"I buy {sum(len(items) for items in shooping.values())} products in total.")
 
